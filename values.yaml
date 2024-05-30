@@ -1,0 +1,30 @@
+replicaCount: 3
+
+auth:
+  enabled: true
+  username: natsuser
+  password: natspassword
+
+cluster:
+  enabled: true
+  replicas: 3
+  name: nats-cluster
+  auth:
+    enabled: true
+    username: clusteruser
+    password: clusterpassword
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 250m
+    memory: 128Mi
+
+persistence:
+  enabled: true
+  storageClass: standard
+  accessModes:
+    - ReadWriteOnce
+  size: 8Gi
