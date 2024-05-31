@@ -1,5 +1,7 @@
 # Bitnami NATS
 
+- Concept https://www.youtube.com/watch?v=FugnvZs012Y
+
 - values.yaml
 ```yaml
 replicaCount: 3
